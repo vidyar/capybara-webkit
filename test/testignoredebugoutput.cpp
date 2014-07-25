@@ -15,7 +15,7 @@ class TestIgnoreDebugOutput: public QObject {
 
 void TestIgnoreDebugOutput::testIgnoreDebugOutput() {
   char buffer[MAX_LEN+1] = {0};
-  int out_pipe[2];
+  int out_pipe[1];
   int saved_stdout;
 
   saved_stdout = dup(STDOUT_FILENO);
